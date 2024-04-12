@@ -241,4 +241,4 @@ Pod 事件报错:
 unlinkat /var/run/netns/cni-49ddd103-d374-1f86-7324-13abaeb9c910: device or resource busy
 ```
 
-原因与解决方案参考: [挂载根目录导致 device or resource busy](../../../troubleshooting-cases/runtime/mount-root-causing-device-or-resource-busy)。
+原因与解决方案参考: [挂载根目录导致 device or resource busy](../../../cases/runtime/mount-root-causing-device-or-resource-busy)。

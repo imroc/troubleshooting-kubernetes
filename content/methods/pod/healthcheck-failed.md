@@ -8,7 +8,7 @@
 
 ## 健康检查配置不合理
 
-`initialDelaySeconds` 或 [StartProbe](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes) 配置的时间太短，容器启动慢，导致容器还没完全启动就开始探测。如果 failureThreshold 是默认值 1，检查失败一次就会被 kill，然后 pod 一直这样被 kill 重启。参考 [健康检查配置](../../best-practices/configure-healthcheck)。
+`initialDelaySeconds` 或 [StartProbe](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes) 配置的时间太短，容器启动慢，导致容器还没完全启动就开始探测。如果 failureThreshold 是默认值 1，检查失败一次就会被 kill，然后 pod 一直这样被 kill 重启。参考 [健康检查配置](https://imroc.cc/kubernetes/best-practices/configure-healthcheck)。
 
 ## 节点负载过高
 
@@ -16,7 +16,7 @@ cpu 占用高（比如跑满）会导致进程无法正常发包收包，通常�
 
 ## 容器进程被木马进程杀死
 
-参考 [使用 systemtap 定位疑难杂症](../skill/use-systemtap-to-locate-problems) 进一步定位。
+参考 [使用 systemtap 定位疑难杂症](../../skill/use-systemtap-to-locate-problems) 进一步定位。
 
 ## 容器内进程端口监听挂掉
 
