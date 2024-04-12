@@ -17,7 +17,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Pod 状态异常',
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'generated-index',
             slug: '/pod/status'
