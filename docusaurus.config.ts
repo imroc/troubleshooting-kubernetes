@@ -125,10 +125,10 @@ const config: Config = {
       // },
       // giscus 评论功能
       giscus: {
-        repo: 'imroc/kubernetes-guide',
-        repoId: 'R_kgDOG-4vhA',
+        repo: 'imroc/troubleshooting-kubernetes',
+        repoId: 'R_kgDOLtLhUg',
         category: 'General',
-        categoryId: 'DIC_kwDOG-4vhM4COPpN',
+        categoryId: 'DIC_kwDOLtLhUs4Cez6E',
       },
       navbar: {
         title: 'Kuberntes 排障指南', // 左上角的电子书名称
