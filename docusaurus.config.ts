@@ -117,12 +117,12 @@ const config: Config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // algolia 搜索功能
-      algolia: {
-        appId: '7WGNV6HFP7',
-        apiKey: 'f3bd4ef4fa5dbfa7494fc901311e584d',
-        indexName: 'imroc-kubernetes',
-        contextualSearch: false,
-      },
+      // algolia: {
+      //   appId: '7WGNV6HFP7',
+      //   apiKey: 'f3bd4ef4fa5dbfa7494fc901311e584d',
+      //   indexName: 'imroc-kubernetes',
+      //   contextualSearch: false,
+      // },
       // giscus 评论功能
       giscus: {
         repo: 'imroc/kubernetes-guide',
