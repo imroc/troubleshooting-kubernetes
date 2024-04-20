@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/logo.svg', // 电子书 favicon 文件，注意替换
 
   url: 'https://imroc.cc', // 在线电子书的 url
-  baseUrl: '/kubernetes/troubleshooting/', // 在线电子书所在 url 的路径，如果没有子路径，可改为 "/"
+  baseUrl: '/kubernetes-troubleshooting/', // 在线电子书所在 url 的路径，如果没有子路径，可改为 "/"
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
