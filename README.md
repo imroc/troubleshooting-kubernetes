@@ -8,7 +8,7 @@
 
 ## 在线阅读
 
-地址: https://imroc.cc/kubernetes/troubleshooting
+地址: https://imroc.cc/kubernetes-troubleshooting
 
 ## 评论与互动
 
