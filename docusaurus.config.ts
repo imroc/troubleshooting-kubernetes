@@ -118,7 +118,7 @@ const config: Config = {
     ({
       // algolia 搜索功能
       algolia: {
-        appId: '977c5b35c45273bd0a510295f353efd8',
+        appId: 'OY81BIVXGU',
         apiKey: '977c5b35c45273bd0a510295f353efd8',
         indexName: 'imroc',
         contextualSearch: false,
