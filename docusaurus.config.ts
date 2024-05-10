@@ -139,17 +139,17 @@ const config: Config = {
         items: [
           {
             label: '排障技能',
-            position: 'right',
+            position: 'left',
             to: '/skill',
           },
           {
             label: '排障方法',
-            position: 'right',
+            position: 'left',
             to: '/methods',
           },
           {
             label: '排障案例',
-            position: 'right',
+            position: 'left',
             to: '/cases',
           },
           {
