@@ -73,7 +73,7 @@ iostat -xhd 2
 while true; do iostat -xhd | grep -A1 vdb | grep -v vdb | awk '{if ($NF > 90){print $0}}'; sleep 1s; done
 ```
 
-如果读写流量或 IOPS 不高，但 `%util` 不高，通常是磁盘本身有问题了，需要检查下磁盘。 在云上托管的 k8s 集群通常就使用的云厂商的云盘(比如腾讯云CBS)，可以拿到磁盘 ID 反馈下。
+如果读写流量或 IOPS 不高，但 `%util` 高，通常是磁盘本身有问题了，需要检查下磁盘。 在云上托管的 k8s 集群通常就使用的云厂商的云盘(比如腾讯云CBS)，可以拿到磁盘 ID 反馈下。
 
 如果读写流量或 IOPS 高，继续下面的步骤排查出哪些进程导致的 IO 高负载。
 
