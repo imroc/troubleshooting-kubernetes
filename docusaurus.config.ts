@@ -22,7 +22,6 @@ const config: Config = {
   projectName: 'troubleshooting-kubernetes', // Github repo 名称
 
   onBrokenLinks: 'warn', // 避免路径引用错误导致编译失败
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     // 默认语言用中文
