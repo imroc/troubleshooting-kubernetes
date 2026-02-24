@@ -17,12 +17,17 @@
 
 在云厂商托管的 K8S 服务里，通常是 LB 会去主动探测 NodePort，发到没有这个 Service 对应 Pod 实例的 Node 时，报文被正常丢弃，从而内核报 warning 日志。
 
-这个日志不会对服务造成影响，可以忽略不管。如果是在腾讯云 TKE 环境里，并且用的 TencentOS，可以设置一个内核参数来抑制这个 warning 日志输出:
+这个日志一般不会对服务造成影响，可以忽略不管。如果是在腾讯云 TKE 环境里，并且用的 TencentOS，在某些机型下如果大量输出这个日志，可能会触发一些奇怪的问题，可以设置一个内核参数来抑制这个 warning 日志输出:
 
 ```bash
+# 立即生效
 sysctl -w net.ipv4.vs.ignore_no_rs_error=1
+# 重启生效
+echo "net.ipv4.vs.ignore_no_rs_error=1" >>/etc/sysctl.conf
 ```
+
+如果节点上的 kube-proxy 版本较新，也会自动设置这个内核参数，无需手动设置。
 
 ## 参考资料
 
-* Kubernetes Issue: [IPVS error log occupation with externalTrafficPolicy: Local option in Service](https://github.com/kubernetes/kubernetes/issues/100925)
+- Kubernetes Issue: [IPVS error log occupation with externalTrafficPolicy: Local option in Service](https://github.com/kubernetes/kubernetes/issues/100925)
